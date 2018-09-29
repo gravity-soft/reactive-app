@@ -1,0 +1,24 @@
+<div v-if="vo.mobile">
+	<drawer-side></drawer-side>
+	<div class="mdc-drawer-scrim"></div>
+	<drawer-header></drawer-header>
+	<main class="main-content">
+		<div class="mdc-top-app-bar--fixed-adjust">
+			<v01></v01>
+			<drawer-bottom></drawer-bottom>
+		</div>
+	</main>
+</div>
+
+<div v-else>
+	<drawer-side></drawer-side>
+	<div class="mdc-drawer-app-content">
+		<drawer-header></drawer-header>
+		<main class="main-content">
+			<div class="mdc-top-app-bar--fixed-adjust">
+				<v01></v01>
+				<drawer-bottom></drawer-bottom>
+			</div>
+		</main>
+	</div>
+</div>

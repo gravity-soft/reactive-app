@@ -1,0 +1,14 @@
+<div style="min-height: 70vh">
+	<ul id="bbs-list" class="mdc-list mdc-list--two-line msgs-list" aria-orientation="vertical" data-mdc-auto-init="MDCList">
+		<li class="mdc-list-item" v-on:click="on.test" v-for="row in vo.list" style="border-bottom:solid 1px #aaa;">
+			<span class="mdc-list-item__text">
+				<span class="mdc-list-item__primary-text" v-text="row.title">First-line text</span>
+				<span class="mdc-list-item__secondary-text" v-text="row.name">Lunch This afternoon?</span>
+			</span>
+
+			<span class="mdc-list-item__end-detail" style="position:absolute; right: 10px;">
+					<span class="mdc-list-item__secondary-text">2018.01.29</span>
+			</span>
+		</li>
+	</ul>
+</div>

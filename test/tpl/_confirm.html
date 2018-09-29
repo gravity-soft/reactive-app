@@ -1,0 +1,9 @@
+<div data-app-modal-layout>
+	<div data-app-modal-content>
+		<div v-html="vo.msg"></div>
+	</div>
+	<div data-app-modal-bar>
+		<button v-text="vo.yes" v-on:click="on.yes" v-focus>yes</button>
+		<button v-text="vo.no" v-on:click="on.no">no</button>
+	</div>
+</div>
