@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<link rel="manifest" href="/ko/manifest.json">
+	<script src="/reactive-app/service/firebasejs/5.5.5/firebase-app.js"></script>
+	<script src="/reactive-app/service/firebasejs/5.5.5/firebase-auth.js"></script>
+	<script src="/reactive-app/service/firebasejs/5.5.5/firebase-database.js"></script>
+	<script src="/reactive-app/service/firebasejs/5.5.5/firebase-messaging.js"></script>
+	<script src="/reactive-app/service/firebasejs/init.js"></script>
+
+	<script src="make-app-ko.2.2.js"></script>
+	<script src="service/firebase.js"></script>
+	<script src="config.js"></script>
+	<script src="firebase.js"></script>
+</head>
+<body>
+	<div data-app-view="v01">
+		<h3>auth</h3>
+		<button data-bind="event:on.google">google</button>
+		<button data-bind="event:on.logout">logout</button>
+		<h3>database</h3>
+		<button data-bind="event:on.dbSet">dbSet</button>
+		<button data-bind="event:on.dbPush">dbPush</button>
+		<button data-bind="event:on.dbOnce">dbOnce</button>
+		<button data-bind="event:on.dbOn">dbOn</button>
+		<h3>messaging</h3>
+		<button data-bind="event:on.msgSend">send</button>
+	</div>
+</body>
+</html>
