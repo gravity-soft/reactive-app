@@ -4,7 +4,7 @@
   "description": "반응형 웹 프레임워크",
   "main": "index.js",
   "scripts": {
-    "start": "http-server ../ -p 9090",
+    "start": "http-server ../ -p 9091",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
