@@ -107,7 +107,7 @@ mkApp.view('v01', function(ctrl) {
 		// TODO(developer): Retrieve an Instance ID token for use with FCM.
 		resetUI();
 	}).catch(function(err) {
-		debug.err('Unable to get permission to notify.', err);
+		console.log('Unable to get permission to notify.', err);
 	});
 	// [END request_permission]
 
@@ -124,7 +124,7 @@ mkApp.view('v01', function(ctrl) {
 				console.log('No Instance ID token available. Request permission to generate one.');
 			}				
 		}).catch(function(err) {
-			debug.err('An error occurred while retrieving token. ', err);
+			console.log('An error occurred while retrieving token. ', err);
 		});
 	});
 	// [END refresh_token]
@@ -148,7 +148,7 @@ mkApp.view('v01', function(ctrl) {
 			  // Show permission UI.
 			}
 		}).catch(function(err) {
-			debug.err('resetUI', 'An error occurred while retrieving token. ', err);
+			console.log('resetUI', 'An error occurred while retrieving token. ', err);
 		});
 	}
 });
